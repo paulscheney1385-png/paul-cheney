@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Paul Cheney MCMI Cmgr — Personal Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#fbfcfd;--card:#ffffff;--muted:#6b7280;--accent:#0f766e;--accent-2:#065f46;--glass: rgba(15,118,110,0.06);font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,Arial;}
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(180deg,var(--bg),#f7fbfb);color:#0f172a;padding:28px;-webkit-font-smoothing:antialiased;}
+  .container{max-width:980px;margin:0 auto;display:grid;grid-template-columns:320px 1fr;gap:28px;align-items:start;}
+  .profile-card{background:var(--card);border-radius:14px;padding:20px;box-shadow:0 6px 18px rgba(16,24,40,0.06);position:sticky;top:28px;}
+  .photo{width:120px;height:120px;border-radius:12px;overflow:hidden;background:linear-gradient(135deg,var(--glass),transparent);display:flex;align-items:center;justify-content:center;margin-bottom:14px;}
+  .photo img{width:100%;height:100%;object-fit:cover;display:block}
+  h1{font-size:20px;margin:6px 0 2px}
+  .title{font-weight:600;color:var(--accent-2);font-size:13px;margin-bottom:10px}
+  .small{font-size:13px;color:var(--muted)}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;border:none;padding:9px 12px;border-radius:10px;font-weight:600;cursor:pointer;text-decoration:none;font-size:13px;}
+  .btn.ghost{background:transparent;color:var(--accent-2);border:1px solid rgba(15,118,110,0.08);}
+  section{background:var(--card);border-radius:12px;padding:18px;margin-bottom:18px;box-shadow:0 6px 18px rgba(16,24,40,0.04);}
+  h2{margin:0 0 8px;font-size:16px}
+  .muted{color:var(--muted);font-size:14px}
+  .qual-list{display:grid;gap:8px;margin-top:10px}
+  .qual-item{background:linear-gradient(180deg,#fff,#fbffff);padding:10px;border-radius:8px;border:1px solid #eef6f5;font-weight:600;font-size:14px;color:#0b4b46;}
+  .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+  .project{padding:12px;border-radius:10px;border:1px dashed rgba(6,95,70,0.06);background:#fff;}
+  .project h3{margin:0;font-size:14px}
+  .project p{margin:8px 0 0;color:var(--muted);font-size:13px}
+  .pdf-embed{border:1px solid #e6eef0;padding:12px;border-radius:8px}
+  @media (max-width:880px){.container{grid-template-columns:1fr}.profile-card{position:relative;top:0}}
+  footer{max-width:980px;margin:18px auto 0;color:var(--muted);font-size:13px;text-align:center}
+  a.inline{color:var(--accent-2);text-decoration:none}
+</style>
+</head>
+<body>
+  <div class="container">
+    <aside class="profile-card">
+      <div style="display:flex;align-items:center;gap:14px">
+        <div class="photo">
+          <img id="profilePhoto" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><rect width='100%' height='100%' fill='%23e6f6f3'/><g fill='%23096b5d'><circle cx='200' cy='130' r='64' fill='%230f766e'/><rect x='100' y='220' rx='18' ry='18' width='200' height='110' fill='%230f766e'/></g></svg>" alt="Profile photo placeholder">
+        </div>
+        <div>
+          <h1>Paul Cheney MCMI Cmgr</h1>
+          <div class="title">Traffic management • Chartered manager</div>
+          <div class="small">Senior Supervisor with 15+ years' leadership in construction, highways and traffic management. Experience managing £1.8M budgets, delivering operational savings and high compliance scores.</div>
+        </div>
+      </div>
+
+      <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
+        <a class="btn" href="https://www.linkedin.com/in/paul-cheney-cmgr-mcmi-fihe-23810a150" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        <button class="btn ghost" id="downloadPDF">Download Full CV (PDF)</button>
+      </div>
+
+      <div class="small" style="margin-top:14px"><strong>LinkedIn:</strong><br><a href="https://www.linkedin.com/in/paul-cheney-cmgr-mcmi-fihe-23810a150" target="_blank" class="inline">linkedin.com/in/paul-cheney-cmgr-mcmi-fihe-23810a150</a></div>
+      <div class="small" style="margin-top:12px"><strong>Contact</strong><div style="margin-top:8px">Email: <a href="mailto:paul@example.com" class="inline">paul@example.com</a></div><div style="margin-top:6px">Phone: <span class="muted">+44 7xxx xxx xxx</span></div></div>
+    </aside>
+
+    <main>
+      <section id="about"><h2>About</h2><p class="muted">Accomplished management professional with 15+ years of leadership in construction, highways, and traffic management. Proven track record in building high-performing teams, driving operational cost savings, and overseeing £1.8M budgets. Seeking senior operational leadership roles to drive scalable improvements.</p></section>
+
+      <section id="experience"><h2>Experience</h2>
+        <div style="margin-top:8px"><strong>Senior Supervisor — F M Conway</strong><div class="muted">2019–Present</div>
+        <ul>
+          <li>Spearheaded creation of an internal traffic management division, reaching 90% self-sufficiency and reducing subcontractor use—weekly savings ~£800.</li>
+          <li>Managed £1.8M annual budget; improved fiscal visibility and CVR reporting.</li>
+          <li>Trained operatives to Lantra and Streetworks standards; improved internal capability.</li>
+          <li>Achieved 98%+ safety audit scores and maintained zero NCRs in internal compliance checks.</li>
+        </ul></div>
+
+        <div style="margin-top:8px"><strong>Traffic Management Supervisor</strong><div class="muted">2017–2018</div>
+        <ul>
+          <li>Oversaw operations across London and the Southeast, managing 20 teams and coordinating subcontractors.</li>
+          <li>Implemented crew allocation strategies pairing experienced with less-experienced staff.</li>
+          <li>Enforced health & safety standards; improved on-site compliance and client relations.</li>
+        </ul></div>
+
+        <div style="margin-top:8px"><strong>Operations Support</strong><div class="muted">2016–2018</div>
+        <ul>
+          <li>Coordinated planning and execution support for 20 operational teams using Excel-based trackers.</li>
+          <li>Led audits and compliance checks; streamlined client communications.</li>
+        </ul></div>
+      </section>
+
+      <section id="quals"><h2>Qualifications & Memberships</h2>
+        <div class="qual-list">
+          <div class="qual-item">ILM Level 3 Diploma in Management</div>
+          <div class="qual-item">CMI Level 5 Diploma in Operations Management</div>
+          <div class="qual-item">NVQ Level 6 in Construction Management</div>
+          <div class="qual-item">Fellow of the Institute of Highways Engineers (FIHE)</div>
+          <div class="qual-item">Member of Chartered Management Institute (CMgr MCIM)</div>
+          <div class="qual-item">NCRQ Health and Safety Manager</div>
+          <div class="qual-item">SSSTS | SMSTS | NRSWA Supervisor</div>
+          <div class="qual-item">12D Lantra M1/M2/M5 M6 and M7 Traffic Management Manager</div>
+          <div class="qual-item">NVQ Level 2 in Highways Operations</div>
+        </div>
+      </section>
+
+      <section id="cv">
+        <h2>Download Full CV</h2>
+        <p class="muted">Click the button to download the official CV (PDF) embedded in this page.</p>
+        <div class="pdf-embed" style="margin-top:12px">
+          <button class="btn" id="downloadLink">Download: Paul Cheney MCMI Cmgr.pdf</button>
+          <div style="margin-top:8px;color:var(--muted);font-size:13px">The PDF is embedded into this single HTML file so it works without external hosting.</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>Built from your supplied CV and profile information. Edit the page in a text editor to update contact details or replace the profile photo.</footer>
+
+<script>
+
+// Download helper using base64 data
+const pdfBase64 = "JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgaHR0cDovL3d3dy5yZXBvcnRsYWIuY29tCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUgo+PgplbmRvYmoKMiAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjEgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iagozIDAgb2JqCjw8Ci9CYXNlRm9udCAvSGVsdmV0aWNhLUJvbGQgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YyIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKNCAwIG9iago8PAovQ29udGVudHMgOSAwIFIgL01lZGlhQm94IFsgMCAwIDU5NS4yNzU2IDg0MS44ODk4IF0gL1BhcmVudCA4IDAgUiAvUmVzb3VyY2VzIDw8Ci9Gb250IDEgMCBSIC9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+IC9Sb3RhdGUgMCAvVHJhbnMgPDwKCj4+IAogIC9UeXBlIC9QYWdlCj4+CmVuZG9iago1IDAgb2JqCjw8Ci9Db250ZW50cyAxMCAwIFIgL01lZGlhQm94IFsgMCAwIDU5NS4yNzU2IDg0MS44ODk4IF0gL1BhcmVudCA4IDAgUiAvUmVzb3VyY2VzIDw8Ci9Gb250IDEgMCBSIC9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+IC9Sb3RhdGUgMCAvVHJhbnMgPDwKCj4+IAogIC9UeXBlIC9QYWdlCj4+CmVuZG9iago2IDAgb2JqCjw8Ci9QYWdlTW9kZSAvVXNlTm9uZSAvUGFnZXMgOCAwIFIgL1R5cGUgL0NhdGFsb2cKPj4KZW5kb2JqCjcgMCBvYmoKPDwKL0F1dGhvciAoXChhbm9ueW1vdXNcKSkgL0NyZWF0aW9uRGF0ZSAoRDoyMDI1MTAyNTExNDUyOCswMCcwMCcpIC9DcmVhdG9yIChcKHVuc3BlY2lmaWVkXCkpIC9LZXl3b3JkcyAoKSAvTW9kRGF0ZSAoRDoyMDI1MTAyNTExNDUyOCswMCcwMCcpIC9Qcm9kdWNlciAoUmVwb3J0TGFiIFBERiBMaWJyYXJ5IC0gd3d3LnJlcG9ydGxhYi5jb20pIAogIC9TdWJqZWN0IChcKHVuc3BlY2lmaWVkXCkpIC9UaXRsZSAoXChhbm9ueW1vdXNcKSkgL1RyYXBwZWQgL0ZhbHNlCj4+CmVuZG9iago4IDAgb2JqCjw8Ci9Db3VudCAyIC9LaWRzIFsgNCAwIFIgNSAwIFIgXSAvVHlwZSAvUGFnZXMKPj4KZW5kb2JqCjkgMCBvYmoKPDwKL0ZpbHRlciBbIC9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZSBdIC9MZW5ndGggMTcxOQo+PgpzdHJlYW0KR2IhI1o5bG8mSSZBQHNCbSVrU3RPV0JSSUFiaF1BRypAZDVcc0I1LHBdPyd1Jk1aaFwhLC5kZ3JxUG81J00xPCJQXTg+c2MwMSZjcD9kM0ZHN2haUT87WXM2KThRK3FdWTAxRk1JRiZJQlJEanFqWV45cU84XzF0UlslT0tWbyphOU07YGdwVDIkYnRNIl02VkA8Y1Y/N3MlKUkqX1AwQzNcWjslYXA1cEArKlcpVzhlJipARjAmYzhYWSViMFRCOitjbC9VbEA9RlBoX2NRKUohSEw2Vk9UIVZBaDAsUF5hMjYoKF5TbCkla0pAMzB0KSUyQS41bDdLIklKayxBXE8nR2FZTWhHOjtnO2tvVSM/bllLKF1HUmBrcW1cTFFgTmByQFxqWy91SU5dMjQ5TCkwLC4xLCYnLW1PKy9aOGBpQWI1OWVlRDtvO0FvalhRM2dkbyExJzRfcCtBPlpPYExhbydWLXQ3UlxsK1IvUkNEYy1gK29sWF4kX2lBME1oKmJWOGNmJjUlJklBbzQ7aiRJUk5HVyktUyRBZCg2bmtZYkUyYiFES09IITxsZkdsWGdJVl0vTERfKUFdMk9YSyhoPUtSaFNgQWU9UV9aSmlZJlRfOCcrMkZVLTJXOGBHOTtOO2ZPSDJMSSktPWdpcjdlIWZnXS50aXJyMl91LjRnSk1odXMnVS5rI0ZySmpOUnBhO2FSLG5MLUdoYzcpKWM3ZGtZIig4WzdbcG87aVRVLDNhQzgnPDhBcDZKKjlSNi9DSCo7RUtYT0pSX
